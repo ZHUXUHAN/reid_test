@@ -1,0 +1,28 @@
+{
+    "dataset":"person",
+
+    "model_prefix":"./test_model/model_2020/model_077/base,16",
+    "output_name":"pre_fc1",
+    "batch_size":400,
+    "input_shape":[3,128,64],
+    "gpus":[0,1,2,3,4,5,6],
+
+    "RGB_BGR":"RGB", 
+    "query_list":"./test_generate/img_query_personA.list",
+    "distractor_list":"./test_generate/img_distractor_personA.list",
+
+    "query_id_key":"./test_generate/imgid_query_personA",
+    "distractor_id_key":"./test_generate/imgid_distractor_personA",
+
+    "query_imagename":"./img_info/imgs_name_query_personA",
+    "distractor_imagename":"./img_info/imgs_name_distractor_personA",
+    
+    "query_img_path": "./img_info/img_query_personA.npy",
+    "distractor_img_path": "./img_info/img_distractor_personA.npy",
+
+    "query_feat_path": ".personA_query.npy",
+    "distractor_feat_path":".personA_distractor.npy",    
+    
+    "save_demo_imgs":"./lingyuan_test/tmp_demo/",
+    "final_demo_imgs":"./lingyuan_test/final_demo"
+}

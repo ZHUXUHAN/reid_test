@@ -1,0 +1,17 @@
+{
+    "model_prefix":"/mnt/sdd1/fyf/reid_model/0.7.5models_mxnet/person/base,67",
+    "output_name":"pre_fc1",
+    "batch_size": 300,
+    "feat_size": 128,
+    "input_shape":[3,128,64],
+    "gpus":[1,2,4,5,6],
+
+    "RGB_BGR":"RGB", 
+    "query_list":"/mnt/reid_dataset/reid_test_datasets/person_ReID_test/personF/personF_query.list",
+    "distractor_list":"/mnt/reid_dataset/reid_test_datasets/person_ReID_test/personF/personF_distractor.list",
+    "img_info": "./img_info/personF_img_info.lbs",
+
+    "imagename":"./img_info/imgs_name_personF",
+    "img_path": "./img_info/img_personF.npy",
+    "feat_path": "./feat/feat_personF.npy"
+}

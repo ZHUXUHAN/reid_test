@@ -1,0 +1,27 @@
+{
+    "dataset":"nonv",
+
+    "model_prefix":"model_mimic/model_nonv44w_mimic_resnet18/base,120",
+    "output_name":"pre_fc1",
+    "batch_size":400,
+    "input_shape":[3,128,64],
+    "gpus":[0,1,2,3,4,5],
+
+    "RGB_BGR":"RGB", 
+    "query_list":"./test_generate/img_query_nonv.list",
+    "distractor_list":"./test_generate/img_distractor_nonv.list",
+
+    "query_id_key":"./test_generate/imgid_query_nonv",
+    "distractor_id_key":"./test_generate/imgid_distractor_nonv",
+
+    "query_imagename":"./img_info/imgs_name_query_nonv",
+    "distractor_imagename":"./img_info/imgs_name_distractor_nonv",
+    
+    "query_img_path": "./img_info/img_query_nonv.npy",
+    "distractor_img_path": "./img_info/img_distractor_nonv.npy",
+
+    "query_feat_path": ".nonv_query.npy",
+    "distractor_feat_path":".nonv_distractor.npy"
+
+
+}

@@ -1,0 +1,28 @@
+{
+    "dataset":"person",
+
+    "model_prefix":"/mnt/sdd1/fyf/reid_test_fyf_final/model_person_allcombine/person_combine_all4_res18_BGR_aug_v5_nose/model,180000",
+    "output_name":"student_pre_fc1",
+    "batch_size":400,
+    "input_shape":[3,128,64],
+    "gpus":[0,1,2,3,4,5,6],
+
+    "RGB_BGR":"BGR", 
+    "query_list":"./test_generate/img_query_personA3.list",
+    "distractor_list":"./test_generate/img_distractor_personA3.list",
+
+    "query_id_key":"./test_generate/imgid_query_personA3",
+    "distractor_id_key":"./test_generate/imgid_distractor_personA3",
+
+    "query_imagename":"./img_info/imgs_name_query_personA3",
+    "distractor_imagename":"./img_info/imgs_name_distractor_personA3",
+    
+    "query_img_path": "./img_info/img_query_personA3.npy",
+    "distractor_img_path": "./img_info/img_distractor_personA3.npy",
+
+    "query_feat_path": ".personA3_query.npy",
+    "distractor_feat_path":".personA3_distractor.npy",    
+    
+    "save_demo_imgs":"./lingyuan_test/tmp_demo/",
+    "final_demo_imgs":"./lingyuan_test/final_demo"
+}

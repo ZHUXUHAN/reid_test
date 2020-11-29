@@ -1,0 +1,32 @@
+{
+    "dataset":"carfront",
+
+    "model_prefix":"./mimic_resnet18/mimic_carfront123w_resnet18/base,121",
+    "output_name":"pre_fc1",
+    "batch_size":400,
+    "input_shape":[3,112,112],
+    "gpus":[0,1,2,3,4,5],
+
+    "RGB_BGR":"RGB", 
+    "query_list_hasplate":"./test_generate/img_query_carfront_hasplate.list",
+    "query_list_noplate":"./test_generate/img_query_carfront_noplate.list",
+    "distractor_list":"./test_generate/img_distractor_carfront.list",
+
+    "query_id_key_hasplate":"./test_generate/imgid_query_carfront_hasplate",
+    "query_id_key_noplate":"./test_generate/imgid_query_carfront_noplate",
+    "distractor_id_key":"./test_generate/imgid_distractor_carfront",
+
+    "query_imagename_hasplate":"./img_info/imgs_name_query_carfront_hasplate",
+    "query_imagename_noplate":"./img_info/imgs_name_query_carfront_noplate",
+    "distractor_imagename":"./img_info/imgs_name_distractor_carfront",
+    
+    "query_img_hasplate_path": "./img_info/img_query_carfront_hasplate.npy",
+    "query_img_noplate_path": "./img_info/img_query_carfront_noplate.npy",
+    "distractor_img_path": "./img_info/img_distractor_carfront.npy",
+
+    "query_feat_hasplate_path": ".carfront_query_hasplate.npy",
+    "query_feat_noplate_path": ".carfront_query_noplate.npy",
+    "distractor_feat_path":".carfront_distractor.npy"
+
+
+}

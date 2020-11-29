@@ -1,0 +1,28 @@
+{
+    "dataset":"person",
+
+    "model_prefix":"./test_model/model_2020/model_ax_fp16/model,24",
+    "output_name":"pre_fc1",
+    "batch_size":400,
+    "input_shape":[3,128,64],
+    "gpus":[0,1,2,3,4,5,6],
+
+    "RGB_BGR":"RGB", 
+    "query_list":"/mnt/sdd1/fyf/reid_test_haiqiang_new/test_generate/img_query_direc_back.list",
+    "distractor_list":"/mnt/sdd1/fyf/reid_test_haiqiang_new/test_generate/img_gallery_direc_back.list",
+
+    "query_id_key":"/mnt/sdd1/fyf/reid_test_haiqiang_new/test_generate/img_query_direc_back",
+    "distractor_id_key":"/mnt/sdd1/fyf/reid_test_haiqiang_new/test_generate/img_gallery_direc_back",
+
+    "query_imagename":"/mnt/sdd1/fyf/reid_test_haiqiang_new/img_info/imgs_name_query_direc_back",
+    "distractor_imagename":"/mnt/sdd1/fyf/reid_test_haiqiang_new/img_info/img_gallery_driec_back",
+    
+    "query_img_path": "/mnt/sdd1/fyf/reid_test_haiqiang_new/img_info/img_query_direc_back.npy",
+    "distractor_img_path": "/mnt/sdd1/fyf/reid_test_haiqiang_new/img_info/img_gallery_direc_back.npy",
+
+    "query_feat_path": "./wzm_fea_save/directions/back/ax_fp16/person_direc_back_query.npy",
+    "distractor_feat_path":"./wzm_fea_save/directions/back/ax_fp16/person_direc_back_gallery.npy",    
+    
+    "save_demo_imgs":"./reid_directions/back",
+    "final_demo_imgs":"./reid_directions/back_demo"
+}

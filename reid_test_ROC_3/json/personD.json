@@ -1,0 +1,17 @@
+{
+    "model_prefix":"/home/wangzhumei/work/reid_test_haiqiang_new/test_model/model_2020/model_xj_f128_lr10_b256/model,41",
+    "output_name":"pre_fc1",
+    "batch_size": 300,
+    "feat_size": 128,
+    "input_shape":[3,128,64],
+    "gpus":[1,2,4,5,6],
+
+    "RGB_BGR":"BGR", 
+    "query_list":"/mnt/reid_dataset/reid_test_datasets/person_ReID_test/personD/personD_query.list",
+    "distractor_list":"/mnt/reid_dataset/reid_test_datasets/person_ReID_test/personD/personD_distractor.list",
+    "img_info": "./img_info/personD_img_info.lbs",
+
+    "imagename":"./img_info/imgs_name_personD",
+    "img_path": "./img_info/img_personD.npy",
+    "feat_path": "./feat/personD_xj10w_f128_lr10_b256_feat.npy"
+}

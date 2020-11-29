@@ -1,0 +1,27 @@
+{
+    "dataset":"person",
+
+    "model_prefix":"./test_model/merge_local_local2/base,67",
+    "output_name":"pre_fc1",
+    "batch_size":400,
+    "input_shape":[3,128,64],
+    "gpus":[1,2,3,4,5,6],
+
+    "RGB_BGR":"RGB", 
+    "query_list":"./test_generate/img_query_personC.list",
+    "distractor_list":"./test_generate/img_distractor_personC.list",
+
+    "query_id_key":"./test_generate/imgid_query_personC",
+    "distractor_id_key":"./test_generate/imgid_distractor_personC",
+
+    "query_imagename":"./img_info/imgs_name_query_personC",
+    "distractor_imagename":"./img_info/imgs_name_distractor_personC",
+    
+    "query_img_path": "./img_info/img_query_personC.npy",
+    "distractor_img_path": "./img_info/img_distractor_personC.npy",
+
+    "query_feat_path": ".personC_query.npy",
+    "distractor_feat_path":".personC_distractor.npy",
+    "save_demo_imgs":"./personC_img/tmp_demo",
+    "final_demo_imgs":"./final_demo"
+}

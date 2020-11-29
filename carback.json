@@ -1,0 +1,32 @@
+{
+    "dataset":"carback",
+
+    "model_prefix":"./model_databaseline/models_old3262_new2694_carback/base,93",
+    "output_name":"pre_fc1",
+    "batch_size":300,
+    "input_shape":[3,112,112],
+    "gpus":[0,1,2,3,4,5,6],
+
+    "RGB_BGR":"BGR", 
+    "query_list_hasplate":"./test_generate/img_query_carback_hasplate.list",
+    "query_list_noplate":"./test_generate/img_query_carback_noplate.list",
+    "distractor_list":"./test_generate/img_distractor_carback.list",
+
+    "query_id_key_hasplate":"./test_generate/imgid_query_carback_hasplate",
+    "query_id_key_noplate":"./test_generate/imgid_query_carback_noplate",
+    "distractor_id_key":"./test_generate/imgid_distractor_carback",
+
+    "query_imagename_hasplate":"./img_info/imgs_name_query_carback_hasplate",
+    "query_imagename_noplate":"./img_info/imgs_name_query_carback_noplate",
+    "distractor_imagename":"./img_info/imgs_name_distractor_carback",
+    
+    "query_img_hasplate_path": "./img_info/img_query_carback_hasplate.npy",
+    "query_img_noplate_path": "./img_info/img_query_carback_noplate.npy",
+    "distractor_img_path": "./img_info/img_distractor_carback.npy",
+
+    "query_feat_hasplate_path": ".carback_query_hasplate.npy",
+    "query_feat_noplate_path": ".carback_query_noplate.npy",
+    "distractor_feat_path":".carback_distractor.npy"
+
+
+}

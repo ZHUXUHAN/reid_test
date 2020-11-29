@@ -1,0 +1,27 @@
+{
+    "dataset":"person",
+
+    "model_prefix":"./nonv44w_baseline_035/base,93",
+    "output_name":"pre_fc1",
+    "batch_size":400,
+    "input_shape":[3,128,64],
+    "gpus":[0,1,2,3,4,5],
+
+    "RGB_BGR":"BGR", 
+    "query_list":"./test_generate/img_query_person_hongwai.list",
+    "distractor_list":"./test_generate/img_distractor_person_hongwai.list",
+
+    "query_id_key":"./test_generate/imgid_query_person_hongwai",
+    "distractor_id_key":"./test_generate/imgid_distractor_person_hongwai",
+
+    "query_imagename":"./img_info/imgs_name_query_person_hongwai",
+    "distractor_imagename":"./img_info/imgs_name_distractor_person_hongwai",
+    
+    "query_img_path": "./img_info/img_query_person_hongwai.npy",
+    "distractor_img_path": "./img_info/img_distractor_person_hongwai.npy",
+
+    "query_feat_path": ".person_hongwai_query.npy",
+    "distractor_feat_path":".person_hongwai_distractor.npy"
+
+
+}

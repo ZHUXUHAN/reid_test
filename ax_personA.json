@@ -1,0 +1,28 @@
+{
+    "dataset":"person",
+
+    "model_prefix":"/mnt/sdd1/fyf/anxiang_reid/model_006/model,100000",
+    "output_name":"fc1",
+    "batch_size":100,
+    "input_shape":[3,128,64],
+    "gpus":[0,1,2,3,4,5,6],
+
+    "RGB_BGR":"RGB", 
+    "query_list":"./test_generate/img_query_personA.list",
+    "distractor_list":"./test_generate/img_distractor_personA.list",
+
+    "query_id_key":"./test_generate/imgid_query_personA",
+    "distractor_id_key":"./test_generate/imgid_distractor_personA",
+
+    "query_imagename":"./img_info/imgs_name_query_personA",
+    "distractor_imagename":"./img_info/imgs_name_distractor_personA",
+    
+    "query_img_path": "/mnt/sdd1/fyf/anxiang_reid/img_query_personA.npy",
+    "distractor_img_path": "/mnt/sdd1/fyf/anxiang_reid/img_distractor_personA.npy",
+
+    "query_feat_path": "/mnt/sdd1/fyf/anxiang_reid/features/personA_query.npy",
+    "distractor_feat_path":"/mnt/sdd1/fyf/anxiang_reid/features/personA_distractor.npy",    
+    
+    "save_demo_imgs":"/mnt/sdd1/fyf/anxiang_reid/model_001/demo",
+    "final_demo_imgs":"/mnt/sdd1/fyf/anxiang_reid/model_001/demo"
+}
